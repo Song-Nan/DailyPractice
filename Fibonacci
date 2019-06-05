@@ -1,0 +1,13 @@
+# 剑指offer里面的一个Fibonacci和跳台阶两个题的原理都是求斐波那契的第n个数：
+
+现在将斐波那契的基本求法再温习一遍：
+
+> 求第n个斐波那契数：
+
+  public int Fibonacci(int n) {
+           if(n < 0 )
+               return 0;
+           if(n == 1 || n == 2)
+               return 1;
+            return (Fibonacci(n-1) + Fibonacci(n-2));
+    }

@@ -1,0 +1,15 @@
+1. 利用栈结构，遍历链表，将元素存入栈中，再输出栈
+      public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+          Stack <Integer> stack = new Stack<Integer>();
+          ArrayList<Integer> list = new ArrayList();
+          while(listNode!=null)
+          {
+              stack.push(listNode.val);
+              listNode=listNode.next;
+          }
+          while(!stack.isEmpty())
+          {
+             list.add(stack.pop());
+          }
+          return list;
+    }
